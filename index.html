@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <!-- <div class="container">Instructions</div> -->
+  <body>
+    
+    <div class="wrapper">
+      <h1>Guess the Word</h1>
+      <center>
+        <div class="container">
+          <button type="submit" class="btn" onclick="openPopup()"><a href="#">Instructions</a><span style="font-size:x-large;">👆</span></button>
+          <div class="popup" id="popup">
+            <h2>Read Carefully!☠️</h2>
+            <ol style="text-align: left;">
+              <li>You can play the game 3 times only, Score as high as you can.</li>
+              <li>Until completion of your 3 chances don't go to next game.</li>
+              <li>Atmost you can type 8 wrong letters for each word.</li>
+              <li>Each question carries 10 marks, it will decrease based on the no.of wrong letters you typed to guess word.</li>
+              <li>After Completion click on Next Game</li>
+              <li><strong>Assessment criteria</strong></li>
+              <ol>score>=20 Your verbal skills are good<br>
+              <10<=score<20 You can improve your verbal skills<br> score<10 You have to work hard to improve your verbal skills</ol>
+            </ol>
+            <button type="button" onclick="closePopup()">OK</button>
+          </div> 
+    </center>
+      <a href="."></a>
+      <!-- <h3>Guess the Word</h3> -->
+      <br>
+      <div class="suri">Your Score:<span></span></div>
+
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint"><strong>Hint:</strong> <span></span></p>
+          <p class="guess-left"><strong>Remaining guesses:</strong> <span></span></p>
+          <p class="wrong-letter">Wrong letters:<span></span></p>
+        </div>
+        <!-- <div class="suri"><div onload="mysuri()">Your Score:<span id="akshay"></span></div></div> -->
+        <button class="reset-btn">Reset Word</button>
+      </div>
+      <center>
+        <!-- <button id="nextbutton" onclick="openbutton()">Next Game</button> -->
+      <a href="https://surendra-95.github.io/Treasure_escape/" aria-disabled="true" id="nextbutton">Next Game</a>
+    </center>
+    </div>
+
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
